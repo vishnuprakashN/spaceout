@@ -1,0 +1,142 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: bacteral_blight_1
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: yellow_leaves
+   - action: utter_ask_another_sym
+   - intent: wilting
+   - action: utter_bacteral_blight
+   - intent: solution
+   - action: utter_bacteral_blight_solution
+   - intent: prevent
+   - action: utter_bacteral_blight_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+
+- story: bacteral_blight_2
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: yellow_leaves
+   - action: utter_ask_another_sym
+   - intent: wilting
+   - action: utter_bacteral_blight
+   - intent: solution
+   - action: utter_bacteral_blight_solution
+   - intent: prevent
+   - action: utter_bacteral_blight_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: bacteral_blight_3
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: wilting
+   - action: utter_ask_another_sym
+   - intent: yellow_leaves
+   - action: utter_bacteral_blight
+   - intent: solution
+   - action: utter_bacteral_blight_solution
+   - intent: prevent
+   - action: utter_bacteral_blight_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: bacteral_blight_4
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: wilting
+   - action: utter_ask_another_sym
+   - intent: yellow_leaves
+   - action: utter_bacteral_blight
+   - intent: solution
+   - action: utter_bacteral_blight_solution
+   - intent: prevent
+   - action: utter_bacteral_blight_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: Rice ragged stunt_1
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: yellow_leaves
+   - action: utter_ask_another_sym
+   - intent: dark_green
+   - action: utter_Rice_ragged_stunt
+   - intent: solution
+   - action: utter_Rice_ragged_stunt_solution
+   - intent: prevent
+   - action: utter_Rice_ragged_stunt_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+
+
+- story: Rice ragged stunt_2
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: yellow_leaves
+   - action: utter_ask_another_sym
+   - intent: dark_green
+   - action: utter_Rice_ragged_stunt
+   - intent: solution
+   - action: utter_Rice_ragged_stunt_solution
+   - intent: prevent
+   - action: utter_Rice_ragged_stunt_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+
+- story: Rice ragged stunt_3
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: dark_green
+   - action: utter_ask_another_sym
+   - intent: yellow_leaves
+   - action: utter_Rice_ragged_stunt
+   - intent: solution
+   - action: utter_Rice_ragged_stunt_solution
+   - intent: prevent
+   - action: utter_Rice_ragged_stunt_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: Rice ragged stunt_4
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: dark_green
+   - action: utter_ask_another_sym
+   - intent: yellow_leaves
+   - action: utter_Rice_ragged_stunt
+   - intent: solution
+   - action: utter_Rice_ragged_stunt_solution
+   - intent: prevent
+   - action: utter_Rice_ragged_stunt_prevent
+   - intent: goodbye
+   - action: utter_goodbye
