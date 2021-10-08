@@ -16,7 +16,7 @@ vocoder.load_model("vocoder/saved_models/pretrained/pretrained.pt")
 print("all the models imported \n")
 
 SAMPLE_RATE = 22050
-record_or_upload = "samples/1320_00000.mp3" 
+record_or_upload = "samples/p240_00000.mp3" 
 record_seconds = 5
 embedding = None
 
@@ -37,14 +37,14 @@ def synthesize(embed, text):
   generated_wav = np.pad(generated_wav, (0, synthesizer.sample_rate), mode="constant")
   print("sysnthesize complete \n")
   print(generated_wav)
-  write('voice.wav',synthesizer.sample_rate,generated_wav)
+  write('girl_voice.wav',synthesizer.sample_rate,generated_wav)
   print("voice generated")
 
 
 
 _compute_embedding(record_or_upload)
 
-text = "hey this is vishnu and iam the king of the world"
+text = "how are you vishnu"
 
 synthesize(embedding,text)
 
