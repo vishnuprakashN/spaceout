@@ -1,43 +1,48 @@
 <!doctype html>
+
 <html>
   <head>
     <title>Voice synthesizer</title>
+    <link rel="stylesheet" href="static/styles.css">
   </head>
+
+
+
   <body>
-    <header>
-      <h1>Voice synthesizer</h1>
-    </header>
+
+
     <form class="input" id="voice-form" method="post">
-                <div class="field">
-                    <label for="speech">Type Something</label>
-                    <input type="text" name="speech" id="speech" required />
-                </div>
-                <div class="field">
-                    <label for="voices">Choose a Voice Assistant</label>
-                      <select name="voices" id="voices">
-                          <option value="Tina">Tina</option>
-                          <option value="Rob">Rob</option>
-                          <option value="Vishnu">Vishnu</option>
-
-                      </select>
-                </div>
+                <h1>Voice synthesizer</h1>
+                <input type="text" name="speech" id="speech" placeholder="Enter text to synthesize" required />
+                <label class="select" for="slct">
+                <select name="slct" id="slct" required="required">
+                  <option value="" disabled="disabled" selected="selected">Select Voice</option>
+                  <option value="Tina">Tina</option>
+                  <option value="Rob">Rob</option>
+                  <option value="Vishnu">Vishnu</option>
+                  <option value="Vishal">Vishal</option>
+                  <option value="Victor">Victor</option>
+                  <option value="Ashvika">Ashvika</option>
+                </select>
+                <svg>
+                  <use xlink:href="#select-arrow-down"></use>
+                </svg>
+              </label>
+              <!-- SVG Sprites-->
+              <svg class="sprites">
+                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                  <polyline points="1 1 5 5 9 1"></polyline>
+                </symbol>
+              </svg>
                 <button>Say it!</button>
+
+                {% if verify == "yes" %}
+                  <audio id="audio" controls>
+                    <source src="{{ file_name }}" type="audio/mpeg" >
+                  </audio> 
+                {% endif %}
+
     </form>
-
-    <audio controls>
-      <source src="http://127.0.0.1:5000/static/please.mp3" type="audio/mpeg">
-    </audio> 
-
-  <!--  <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-    </script>
-
-    <input type="button" value="PLAY" onclick="play()">
-    <audio id="audio" src="http://127.0.0.1:5000/static/please.mp3"></audio>
-    -->
-
+ 
   </body>
 </html>

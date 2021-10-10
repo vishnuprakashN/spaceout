@@ -18,7 +18,10 @@ vocoder.load_model("trained_models/vocoder/saved_models/pretrained/pretrained.pt
 print("all the models imported \n")
 voice_one = "samples/1320_00000.mp3" 
 voice_two = "samples/3575_00000.mp3"
-voice_three = "samples/p240_00000.mp3"
+voice_three = "samples/6829_00000.mp3"
+voice_four = "samples/8230_00000.mp3"
+voice_five = "samples/p240_00000.mp3"
+voice_six = "samples/p260_00000.mp3"
 
 
 SAMPLE_RATE = 22050
@@ -29,11 +32,18 @@ print("audio file imported \n")
 global voice_embedding_one  
 global voice_embedding_two  
 global voice_embedding_three  
+global voice_embedding_four
+global voice_embedding_five
+global voice_embedding_six
+
 
 
 voice_embedding_one = encoder.embed_utterance(encoder.preprocess_wav(voice_one, SAMPLE_RATE))
 voice_embedding_two = encoder.embed_utterance(encoder.preprocess_wav(voice_two, SAMPLE_RATE))
 voice_embedding_three = encoder.embed_utterance(encoder.preprocess_wav(voice_three, SAMPLE_RATE))
+voice_embedding_four= encoder.embed_utterance(encoder.preprocess_wav(voice_four, SAMPLE_RATE))
+voice_embedding_five= encoder.embed_utterance(encoder.preprocess_wav(voice_five, SAMPLE_RATE))
+voice_embedding_six= encoder.embed_utterance(encoder.preprocess_wav(voice_six, SAMPLE_RATE))
 print("encoder is sucessfull")
 
 
@@ -50,7 +60,7 @@ def write_it(f, sr, x, normalized=False):
     song.export(f, format="mp3", bitrate="320k")
 
 
-def synthesize(embed, text):
+def synthesize(embed, text,name):
   print("Synthesizing new audio... \n")
   #with io.capture_output() as captured:
   specs = synthesizer.synthesize_spectrograms([text], [embed])
@@ -62,11 +72,11 @@ def synthesize(embed, text):
   print(generated_wav)
   scaled = np.int16(generated_wav/np.max(np.abs(generated_wav)) * 32767)
   write('trial1.wav',synthesizer.sample_rate,scaled)
-  AudioSegment.from_wav("trial1.wav").export("static/please.mp3", format="mp3")
+  AudioSegment.from_wav("trial1.wav").export("static/recordings/{0}.mp3".format(name), format="mp3")
   print("voice generated")
 
 
-def output(text,voice):
+def output(text,voice,name):
     
     if voice == "Tina":
        embedding = voice_embedding_one 
@@ -74,7 +84,13 @@ def output(text,voice):
        embedding = voice_embedding_two
     elif voice == "Vishnu":
        embedding = voice_embedding_three
+    elif voice == "Vishal":
+       embedding = voice_embedding_four
+    elif voice == "Victor":
+       embedding = voice_embedding_five
+    elif voice == "Ashvika":
+       embedding = voice_embedding_six
 
-    synthesize(embedding,text)
+    synthesize(embedding,text,name)
 
 
