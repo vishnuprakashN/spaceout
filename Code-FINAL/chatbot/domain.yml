@@ -1,0 +1,81 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - yellow_leaves
+  - wilting
+  - solution
+  - prevent
+  - bacteral_blight
+  - problem
+  - dark_green
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How can i help you"
+
+  utter_bacteral_blight:
+  - text: "it's symptoms of bacteral blight disease"
+
+  utter_bacteral_blight_e1:
+  - text: "is there any wilting leaves in your crop?"
+
+  utter_bacteral_blight_e2:
+  - text: "is there any yellowing leaves in your crop?"
+
+  utter_all_right:
+  - text: "no worries, everything all right "
+
+  utter_bacteral_blight_solution:
+  - text: "You should to use a combination of copper and mancozeb-containing fungicides Apply fungicides two to three times at 7 to 10 day"
+
+  utter_bacteral_blight_prevent:
+  - text: " Use balanced amount of plant nutrients"
+
+  utter_Rice_ragged_stunt:
+  - text: "it's symptoms of rice ragged stunt"
+
+  utter_Rice_ragged_stunt_solution:
+  - text: "Plow infected stubbles under the field after harvest to reduce the virus source."
+
+  utter_Rice_ragged_stunt_prevent:
+    - text: "Avoid close planting and provide 30cm rogue spacing at every 2.5 to3.0m to reduce the past incidence"
+
+  utter_problem:
+  - text: "I am here to help you to save your crop ask me is there any problem in your crop"
+
+
+  utter_ask_another_sym:
+  - text: "Do you have another symptoms?"
+
+
+  utter_want_solution:
+  - text: "Do you want solution this disease?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

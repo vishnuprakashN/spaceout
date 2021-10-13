@@ -1,0 +1,154 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: yellow_leaves
+  examples: |
+    - color change to yellow
+    - appear yellow in middle of leaves
+    - crop color yellow
+    - yellowish green leaves that are shorter
+    - leaves appearing yellow to yellow-brown and twisted into
+
+- intent: wilting
+  examples: |
+    - wilting
+    - wilt
+    - flop
+
+- intent: dark_green
+  examples: |
+    - green leaves with darker than normal color
+
+- intent: dark_brown
+  examples: |
+    -  dark brown starting from leaf tips or edges
+    -  later become light brown to yellowish gray.
+
+- intent: die
+  examples: |
+    - Entire leaves may become brown and die
+
+- intent: leaf_scald
+  examples: |
+    - light brown halos in mature leaves
+    - light brown spot
+    - small circle brown dot
+
+
+- intent: problem
+  examples: |
+    - I have problem
+    - what is your propose?
+    - what are you give to me?
+
+- intent: bacteral_blight
+  examples: |
+    - bacterial blight
+
+
+
+- intent: solution
+  examples: |
+    - treat
+    - treatment
+    - solution
+    - solve
+
+
+- intent: prevent
+  examples: |
+    - how to prevent
+    - how to avoid
+
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
