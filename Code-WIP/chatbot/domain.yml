@@ -15,6 +15,9 @@ intents:
   - bacteral_blight
   - problem
   - dark_green
+  - dark_brown
+  - die
+  - leaf_scald
 
 
 
@@ -39,6 +42,9 @@ responses:
 
   utter_bacteral_blight_prevent:
   - text: " Use balanced amount of plant nutrients"
+  - text: "Ensure good drainage pf fields"
+  - text: "Remove weed hosts and plow under rice stubble"
+
 
   utter_Rice_ragged_stunt:
   - text: "it's symptoms of rice ragged stunt"
@@ -47,10 +53,31 @@ responses:
   - text: "Plow infected stubbles under the field after harvest to reduce the virus source."
 
   utter_Rice_ragged_stunt_prevent:
-    - text: "Avoid close planting and provide 30cm rogue spacing at every 2.5 to3.0m to reduce the past incidence"
+  - text: "Avoid close planting and provide 30cm rogue spacing at every 2.5 to3.0m to reduce the past incidence"
+
+  utter_bacterial_leaf_streak:
+  - text: "it's symptoms of bacterial leaf streak "
+
+  utter_bacterial_leaf_streak_solution:
+  - text: "Treat seeds with hot water. "
+  - text: "Keep fields clean—remove weed hosts and plow under rice stubble, straw, rice ratoons, and volunteer seedlings, which may be infected by the bacteria."
+
+  utter_bacterial_leaf_streak_prevent:
+  - text: " Ensure good drainage of fields (in conventionally flooded crops) and nurseries."
+  - text: "Dry the field during the fallow period to kill the bacteria in the soil and in plant residues."
+
+  utter_Leaf_Scald_solution:
+  - text: "you should to use Chemicals such as benomyl, carbendazim, quitozene, and thiophanate-methyl to treat the seeds to eliminate."
+
+  utter_Leaf_Scald:
+  - text: "it's symptoms of leaf scald"
+
+  utter_leaf_scald_prevent:
+  - text: "Avoid high use of fertilizer."
+
 
   utter_problem:
-  - text: "I am here to help you to save your crop ask me is there any problem in your crop"
+  - text: "I am here to help you to save your crops let me known is there any problem in your crops"
 
 
   utter_ask_another_sym:

@@ -140,3 +140,134 @@ stories:
    - action: utter_Rice_ragged_stunt_prevent
    - intent: goodbye
    - action: utter_goodbye
+
+
+- story: bacteral leaf strake_1
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: dark_brown
+   - action: utter_ask_another_sym
+   - intent: die
+   - action: utter_bacterial_leaf_streak
+   - intent: solution
+   - action: utter_bacterial_leaf_streak_solution
+   - intent: prevent
+   - action: utter_bacterial_leaf_streak_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: bacteral leaf strake_2
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: dark_brown
+   - action: utter_ask_another_sym
+   - intent: die
+   - action: utter_bacterial_leaf_streak
+   - intent: solution
+   - action: utter_bacterial_leaf_streak_solution
+   - intent: prevent
+   - action: utter_bacterial_leaf_streak_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: bacteral leaf strake_3
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: die
+   - action: utter_ask_another_sym
+   - intent: dark_brown
+   - action: utter_bacterial_leaf_streak
+   - intent: solution
+   - action: utter_bacterial_leaf_streak_solution
+   - intent: prevent
+   - action: utter_bacterial_leaf_streak_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: bacteral leaf strake_4
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: die
+   - action: utter_ask_another_sym
+   - intent: dark_brown
+   - action: utter_bacterial_leaf_streak
+   - intent: solution
+   - action: utter_bacterial_leaf_streak_solution
+   - intent: prevent
+   - action: utter_bacterial_leaf_streak_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+
+
+- story: leaf_scald_1
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: dark_brown
+   - action: utter_ask_another_sym
+   - intent: leaf_scald
+   - action: utter_Leaf_Scald
+   - intent: solution
+   - action: utter_Leaf_Scald_solution
+   - intent: prevent
+   - action: utter_leaf_scald_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: leaf_scald_2
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: dark_brown
+   - action: utter_ask_another_sym
+   - intent: leaf_scald
+   - action: utter_Leaf_Scald
+   - intent: solution
+   - action: utter_Leaf_Scald_solution
+   - intent: prevent
+   - action: utter_leaf_scald_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: leaf_scald_3
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: leaf_scald
+   - action: utter_ask_another_sym
+   - intent: dark_brown
+   - action: utter_Leaf_Scald
+   - intent: solution
+   - action: utter_Leaf_Scald_solution
+   - intent: prevent
+   - action: utter_leaf_scald_prevent
+   - intent: goodbye
+   - action: utter_goodbye
+
+- story: leaf_scald_4
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: problem
+   - action: utter_problem
+   - intent: leaf_scald
+   - action: utter_ask_another_sym
+   - intent: dark_brown
+   - action: utter_Leaf_Scald
+   - intent: solution
+   - action: utter_Leaf_Scald_solution
+   - intent: prevent
+   - action: utter_leaf_scald_prevent
+   - intent: goodbye
+   - action: utter_goodbye

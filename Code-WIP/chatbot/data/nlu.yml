@@ -26,6 +26,7 @@ nlu:
     - yellowish green leaves that are shorter
     - leaves appearing yellow to yellow-brown and twisted into
 
+
 - intent: wilting
   examples: |
     - wilting
@@ -56,17 +57,22 @@ nlu:
   examples: |
     - I have problem
     - what is your propose?
-    - what are you give to me?
+    - what are you ?
+    - what can you do for me?
 
 - intent: bacteral_blight
   examples: |
-    - bacterial blight
+   - bacterial blight
 
+ 
 
 
 - intent: solution
   examples: |
-    - treat
+    - how do i treat that
+    - how do i treat this disease
+    - how do i treatment that
+    - how do i treatment this disease
     - treatment
     - solution
     - solve
